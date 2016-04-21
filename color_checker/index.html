@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="p5.min.js"></script>
+  </head>
+  <script>
+  var img;
+  function setup(){
+    img = loadImage("red.png");
+    createCanvas(500,500);
+  }
+  function draw(){
+    image(img, 0, 0);
+  }
+
+  function mouseMoved(){
+    color = img.get(mouseX, mouseY);
+    console.log("r: " + red(color) +" g: " + green(color) + " b: " + blue(color));
+  }
+  </script>
+  <body>
+  </body>
+</html>
